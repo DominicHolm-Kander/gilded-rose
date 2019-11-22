@@ -7,8 +7,8 @@ describe("Gilded Rose", function() {
     const gildedRose = new Shop([new Item("foo", 0, 0)]);
     const items = gildedRose.updateQuality();
     expect(items[0].name).toBe("foo");
-    expect(items[0].sellIn).toBe(-1); //failing!
-    expect(items[0].quality).toBe(0); //failing!
+    expect(items[0].sellIn).toBe(-1);
+    expect(items[0].quality).toBe(0);
   });
 });
 
@@ -18,8 +18,8 @@ describe("Gilded Rose", function() {
     const gildedRose = new Shop([new ConjuredItem("foo", 10, 10)]);
     const items = gildedRose.updateQuality(); 
     expect(items[0].name).toBe("foo");
-    expect(items[0].sellIn).toBe(9); //failing!
-    expect(items[0].quality).toBe(8); //failing!
+    expect(items[0].sellIn).toBe(9);
+    expect(items[0].quality).toBe(8);
   });
 });
 
